@@ -52,6 +52,10 @@ li a:hover {
   background-color: #333;
   border: 1px solid #fafafa;
 }
+
+.bsActive {
+  color: #fafafa;
+}
 /* Main Flex Wrapper*/
 
 main.wrapper {
@@ -98,10 +102,11 @@ select {
 /* footer */
 
 .footer {
-  display: flex;
-  justify-content: center;
   background-color: #7b3b3b;
   color: #fafafa;
+  text-align: center;
+  width: auto;
+  padding: 5px;
   margin: 5px;
 }
 
