@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link href="./assets/css/main.css" rel="stylesheet" />
+    <title>Oxwaethan Roller</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>The Oxwaethan Roller</h1>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active"> Home </a></li>
+        <li><a href="contacts.html"> Contacts </a></li>
+        <li><a href="about.html"> About </a></li>
+      </ul>
+    </nav>
+
+    <main class="wrapper my-2">
+      <div class="row g-3 no-gutters">
+        <article class="col-md-4 body1 p-3">
+          <h3>Dice Selector</h3>
+          <form id="diceRoller">
+            <label for="diceNumber"> Dice Amount </label>
+            <input id="diceNumber" type="text" />
+            <br />
+            <label for="diceType"> Pick Your Dice</label>
+            <select id="diceType" name="Dice">
+              <option value="4">d4</option>
+              <option value="6">d6</option>
+              <option value="8">d8</option>
+              <option value="12">d12</option>
+              <option value="20">d20</option>
+              <option value="100">d100</option>
+            </select>
+            <br />
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset" />
+          </form>
+          <h3>Dice Roller</h3>
+          <p id="currentResult">Dice Total!</p>
+        </article>
+
+        <article class="col-md-4 body2 p-3">
+          <div>
+            <h2>Dice Log</h2>
+            <p><em>Result history</em></p>
+            <div id="diceLog"></div>
+            <button type="button" id="clearLog">Clear Log</button>
+          </div>
+        </article>
+
+        <article class="col-md-4 body3 p-3">
+          <div id="characterRoller">
+            <h3>Character Creator</h3>
+            <button id="rollCharacter">Roll Character</button>
+            <div id="characterResult"></div>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <div class="footer">
+      <p>Made by Thomas C. Long: February, 2026</p>
+    </div>
+    <script src="./assets/js/mainRoller.js"></script>
+    <script src="./assets/js/characterRoller.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
